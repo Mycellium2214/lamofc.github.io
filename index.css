@@ -1,0 +1,453 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+
+* {
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 24px;
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #191C1F;
+  color: #E6D5D2;
+}
+
+nav {
+  margin: 50px;
+  height: 150px;
+  width: auto;
+  display: flex;
+  padding: 0;
+  align-items:center;
+  justify-content: space-between;
+}
+
+.contentnav {
+  height: 100%;
+  width: 100%;
+  display: flex;
+}
+
+ul { 
+  list-style: none; 
+  display: table;
+  width: 100%;
+  height: 100%;
+}
+
+li { 
+  margin-left: auto;
+  display: table-cell; 
+  position: relative;
+}
+
+nav .contentnav ul li a {
+ color: #BA1414;
+ text-transform: uppercase;
+ text-decoration: none;
+ letter-spacing: 1px;
+ display: inline-block;
+ padding: 15px 20px;
+ position: relative;
+}
+
+nav .contentnav ul li a:after {    
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  background: #BA1414;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+
+nav .contentnav ul li a:hover:after { 
+  width: 100%; 
+  left: 0; 
+}
+
+.btn {
+  margin-top: 24px;
+  position: relative;
+  display: inline-block;
+  width: 277px;
+  height: 50px;
+  font-size: 24px;
+  line-height: 60px;
+  text-align: center;
+  text-transform: uppercase;
+  background-color: transparent;
+  cursor: pointer;
+  font-style: none;
+  text-decoration: none;
+  letter-spacing: 1px;
+  color: #BA1414;
+}
+
+.btn svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.btn svg rect {
+  stroke: #BA1414;
+  stroke-width: 2;
+  stroke-dasharray: 353, 0;
+  stroke-dashoffset: 0;
+  -webkit-transition: all 600ms ease;
+  transition: all 600ms ease;
+  position: absolute;
+}
+
+.btn:hover svg rect {
+  stroke-width: 2;
+  stroke-dasharray: 196, 543;
+  stroke-dashoffset: 437;
+}
+
+.logo {
+  height: 200px;
+  width: auto;
+  margin-right: 50px;
+}
+
+
+
+/*                                                            New Part !!!                                                                          */
+
+
+
+
+
+.accueil {
+  margin-top: 100px;
+  margin-left: 50px;
+  width: calc(100%-50px);
+  margin-bottom: 50px;
+}
+
+.divtitre {
+  margin-bottom: 50px;
+}
+
+.subtitle {
+  padding-left: 25px;
+  margin: 1em;
+  position: relative;
+}
+
+.divtitre h1 {
+  font-size: 48px;
+  text-decoration: none;
+  font-style: normal;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+
+.subtitle::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 2px;
+  height: 0px;
+  transition: height 0.3s ease 0s, top 0.3s ease 0s;
+  background: #BA1414;
+  top: 50%;
+}
+
+.subtitle:hover::after {
+  height: 100%;
+  top: 0;
+}
+
+.index {
+  font-size: 33px;
+  letter-spacing: 1px;
+}
+
+.icontent {
+  padding-left: 25px;
+  margin: 1em;
+  position: relative;
+}
+
+.icontent::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 2px;
+  height: 0px;
+  transition: height 0.3s ease 0s;
+  background: #BA1414;
+  top: 0;
+}
+
+.icontent:hover::after {
+  height: 100%;
+}
+
+
+/*                            New part                          */
+
+.footer {
+  padding-left: 50px;
+  margin-top: 150px;
+}
+
+.footer h2 {
+  font-size: 48px;
+  text-decoration: none;
+  font-style: normal;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+
+.footercontent {
+  padding-left: 50px;
+}
+
+.fubtitle {
+  font-size: 33px;
+  letter-spacing: 1px;
+} 
+
+.footent {
+  overflow: hidden;
+  position: relative;
+}
+
+hr {
+  margin-left: auto;
+  width: 50%;
+  border: solid 0.5px #BA1414;
+  background: #BA1414;
+}
+
+#pavé {
+  margin-top: 50px;
+  margin-left: 50px;
+  letter-spacing: 1px;
+  line-height: 50px;
+  position: relative;
+}
+
+.footerhey1 p::after {
+  content: "";
+  position: absolute;
+  left: -25px;
+  top: 0;
+  width: 2px;
+  height: 0px;
+  transition: height 0.3s ease 0s;
+  background: #BA1414;
+}
+
+.footerhey1:hover p::after {
+  height: 100%;
+}
+
+.footerhey2 p:after { 
+  content: "";
+  width: 2px;
+  bottom: 50%;
+  left: 0;
+  position: absolute;
+  background: #BA1414;
+  transition: height 0.3s ease 0s, bottom 0.3s ease 0s;
+  height: 0;
+  left: -25px;
+}
+
+.footerhey2:hover p:after { 
+  height: 100%; 
+  bottom: 0; 
+}
+
+.footerhey3 p:after { 
+  content: "";
+  width: 2px;
+  bottom: 50%;
+  left: 0;
+  position: absolute;
+  background: #BA1414;
+  transition: height 0.3s ease 0s, bottom 0.3s ease 0s;
+  height: 0;
+  left: -25px;
+}
+
+.footerhey3:hover p:after { 
+  height: 100%; 
+  bottom: 0; 
+}
+
+.footerhey4 p::after {
+  content: "";
+  position: absolute;
+  left: -25px;
+  bottom: 0;
+  width: 2px;
+  height: 0px;
+  transition: height 0.3s ease 0s;
+  background: #BA1414;
+}
+
+.footerhey4:hover p::after {
+  height: 100%;
+}
+
+
+
+
+
+/*                        New Part                                */
+
+::-webkit-scrollbar {
+  width: 0px;
+}
+
+#scrollPath {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 10px;
+  background: #BA1414;
+}
+
+#progressbar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 10px;
+  height: 100%;
+  background: linear-gradient(to top, #BA1414, #4d1b19);
+}
+
+#progressbar:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to top, #BA1414, #4d1b19);
+  filter: blur(30px);
+}
+
+#progressbar:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to top, #BA1414, #4d1b19);
+  filter: blur(30px);
+}
+
+.credits {
+  width: 1px;
+  height: 1px;
+}
+
+.bump a {
+  color: #BA1414;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 15px 20px;
+  position: relative;
+ }
+ 
+.bump a:after {    
+   background: none repeat scroll 0 0 transparent;
+   bottom: 0;
+   content: "";
+   display: block;
+   height: 2px;
+   left: 50%;
+   position: absolute;
+   background: #BA1414;
+   transition: width 0.3s ease 0s, left 0.3s ease 0s;
+   width: 0;
+ }
+ 
+.bump a:hover:after { 
+   width: 100%; 
+   left: 0; 
+ }
+
+ .bump {
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  display: flex;
+}
+
+.credits {
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  margin-top: 15px;
+}
+
+.credits a {
+  text-decoration: none;
+  color: #E6D5D2;
+  cursor: default;
+  margin-top: 10px;
+}
+
+
+
+
+
+
+
+/*                                                            NEW PART                                                                */
+
+
+
+
+
+
+
+.partimg {
+  margin-top: 15px;
+  align-items: center;
+  justify-content: space-between;
+  display: flex;
+  width: auto;
+  padding: 0;
+  margin-top: 50px;
+}
+
+.partenaires {
+  height: auto;
+  width: 200px;
+  margin: auto;
+}
+
+.img1 {
+  margin-left: calc(25%-200px);
+  width: auto;
+  position: relative;
+}
+
+.img1:after {
+  content: "Zimbabwe";
+  color: #191C1F;
+  left: 0;
+  top: 0; 
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  background: #E6D5D2;
+  opacity: 0.8;
+}
